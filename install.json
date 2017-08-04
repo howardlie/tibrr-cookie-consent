@@ -1,0 +1,109 @@
+{
+  "resources": {
+    "body": [
+      {
+        "type": "style",
+        "src": "./source/app.css"
+      },
+      {
+        "type": "script",
+        "src": "./source/app.js"
+      }
+    ]
+  },
+  "preview": {
+    "handlers": [
+      {
+        "options": ["*"],
+        "execute": "INSTALL_SCOPE.setOptions(INSTALL_OPTIONS)"
+      }
+    ]
+  },
+  "options": {
+    "properties": {
+      "location": {
+        "order": 0,
+        "default": "top",
+        "title": "Location",
+        "description": "Choose where you want the popup to appear at.",
+        "type": "string",
+        "enum": ["top", "bottom"],
+        "enumNames": {
+           "top": "Top",
+           "bottom": "Bottom"
+       }
+      },
+      "message": {
+        "order": 1,
+        "title": "Message",
+        "description": "A short message explaining use of cookies in your site.",
+        "type": "string",
+        "format": "textarea",
+        "default": "This website use cookies to ensure the best experience for user."
+      },
+      "buttonText": {
+        "order": 2,
+        "title": "Button Text",
+        "default": "Got It",
+        "type": "string"
+      },
+      "cookieLifetime": {
+        "order": 3,
+        "default": 30,
+        "title": "Ask again",
+        "description": "Ask again after how many days (if you want to show popup once then set this to 9999)",
+        "type": "integer",
+        "minimum": 7
+      },
+      "backgroundColor": {
+        "order": 4,
+        "default": "#191919",
+        "format": "color",
+        "title": "Popup Background Color",
+        "type": "string"
+      },
+      "buttonColor": {
+        "order": 5,
+        "default": "#5aea15",
+        "format": "color",
+        "title": "Button Color",
+        "type": "string"
+      },
+      "buttonHoverColor": {
+        "order": 6,
+        "default": "#ffffff",
+        "format": "color",
+        "title": "Button Color on hover",
+        "type": "string"
+      },
+      "buttonTextColor": {
+        "order": 7,
+        "default": "#ffffff",
+        "format": "color",
+        "title": "Button Text Color",
+        "type": "string"
+      },
+      "textColor": {
+        "order": 8,
+        "default": "#ffffff",
+        "format": "color",
+        "title": "Text Color",
+        "type": "string"
+      },
+      "buttonHoverTextColor": {
+        "order": 9,
+        "default": "#000000",
+        "format": "color",
+        "title": "Button Text Color on hover",
+        "type": "string"
+      },
+      "buttonBorderColor": {
+        "order": 10,
+        "default": "#000000",
+        "format": "color",
+        "title": "Button Border Color",
+        "type": "string"
+      }
+    }
+  }
+}

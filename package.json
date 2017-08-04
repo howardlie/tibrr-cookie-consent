@@ -1,0 +1,23 @@
+{
+  "name": "tibrr-cookie-consent",
+  "version": "1.0.0",
+  "description": "Add a simple cookie consent to tell visitor if your site use cookie and to comply with EU cookie law",
+  "main": "app.js",
+  "scripts": {
+    "lint": "eslint ./source"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "author": "Howard Lie",
+  "license": "Creative Commons Attribution-ShareAlike 4.0 International License.",
+  "bugs": {
+    "url": "mailto:liehoward13@gmail.com"
+  },
+  "homepage": "https://tibrr.com",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "2.9.0"
+  }
+}
